@@ -26,8 +26,8 @@
     "check": "prettier --check src/**/*.tsx src/**/*.ts"
   },
   "lint-staged": {
-  "*.ts": ["eslint . --fix", "prettier --write"],
-  "*.tsx": ["eslint . --fix", "prettier --write"]
+  "*.tsx": ["eslint . --fix", "prettier --write"],
+  "*.ts": ["eslint . --fix", "prettier --write"]
   },
   "husky": {
     "hooks": {
