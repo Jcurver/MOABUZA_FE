@@ -1,13 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import { RecoilRoot } from 'recoil'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
-import reportWebVitals from './reportWebVitals'
+import reportWebVitals from '../../reportWebVitals'
+import GlobalStyle from '../../styles/GlobalStyle'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <RecoilRoot>
+    <React.StrictMode>
+      <Router>
+        <GlobalStyle />
+        <App />
+      </Router>
+    </React.StrictMode>
+  </RecoilRoot>,
   document.getElementById('root'),
 )
 
